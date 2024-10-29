@@ -1,0 +1,76 @@
+﻿body 
+{
+    direction:rtl;
+    background-color: #f4f4f9;
+}
+
+#formContainer {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #5cb85c;
+}
+
+#nameInput {
+    width: 80%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* כפתור שליחה */
+#submitButton {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 4px;
+    cursor: not-allowed;
+    opacity: 0.5;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* עיצוב כפתור שליחה כאשר הוא זמין */
+#submitButton:enabled {
+    cursor: pointer;
+    opacity: 1;
+    background-color: #5cb85c;
+}
+
+#confirmationMessage {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    background-color: #e7f4e4;
+    color: #2c662d;
+    font-size: 1em;
+    text-align: right;
+}
+
+#nachosPic, #sweetsPic, #popcornPic {
+    width: 20%;
+    height: auto;
+    display: inline-block;
+}
+
+#chair1, #chair2, #chair3, #chair4{
+    width: auto;
+    height: 100px;
+    display: inline-block;
+}

@@ -1,0 +1,84 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript">  </script>
+</head>
+<body>
+    <div id="formContainer">
+        <h1> הזמן כרטיסים</h1>
+        
+        <!-- תיבת טקסט -->
+        <label for="nameInput">*שם המזמין:</label>
+        <input type="text" id="nameInput" placeholder="הזן שם מלא">
+        
+        <!-- כפתורי רדיו -->
+         <!-- בחירת סרט -->
+        <div id="movieSelection">
+            <p>*שם הסרט:</p>
+            <label><input type="radio" id="movieTogether" name="movie" value="Together Forever"> Together Forever</label>
+            <label><input type="radio" id="movieHencrack" name="movie" value="Hencrack"> Hencrack</label>
+            <label><input type="radio" id="movieSenfim" name="movie" value="Senfim"> Senfim</label>
+        </div>
+        
+        <div id="moviePic">
+            <img id="togetherForeverPic" src="./pictures/senfim.png" alt="togetherforever">
+            <img id="HencrackPic" src="./pictures/togetherforever.png" alt="Hencrack">
+            <img id="senfimPic" src="./pictures/hencok.png" alt="Senfim">
+        </div>
+
+         <!-- בחירת כמות כרטיסים -->
+        <div id="ticketSelection">
+            <p>*כמות כרטיסים:</p>
+            <label><input type="radio" id="ticket1" name="tickets" value="1">1</label>
+            <label><input type="radio" id="ticket2" name="tickets" value="2">2</label>
+            <label><input type="radio" id="ticket3" name="tickets" value="3">3</label>
+            <label><input type="radio" id="ticket4" name="tickets" value="4">4</label>
+        </div>
+        
+        <div id="ticketPic">
+            <img id="chair1" src="./pictures/1chair.png" alt="chair1">
+            <img id="chair2" src="./pictures/2chair.png" alt="chair2">
+            <img id="chair3" src="./pictures/3chair.png" alt="chair3">
+            <img id="chair4" src="./pictures/4chair.png" alt="chair4">
+        </div>
+
+        <!-- תיבות סימון -->
+         <!-- בחירת שדרוגים  -->
+        <div id="extrasSelection">
+            <p>שדרוגים:</p>
+            <label><input type="checkbox" id="extraPopcorn" name="extra" value="פופקורן ושתייה"> פופקורן ושתייה</label>
+            <label><input type="checkbox" id="extraSweets" name="extra" value="ממתקים"> ממתקים</label>
+            <label><input type="checkbox" id="extraNachos" name="extra" value="נאצ׳וס"> נאצ׳וס</label>
+            <label><input type="checkbox" id="none" name="extra" value="ללא"> ללא</label>
+        </div>
+
+        <div id="extraPic">
+            <img id="popcornPic" src="./pictures/popcornAndBaverage.png" alt="popcornAndBaverage">
+            <img id="sweetsPic" src="./pictures/sweets.png" alt="sweets">
+            <img id="nachosPic" src="./pictures/nachos.png" alt="nachos">
+        </div>
+
+        <br/>
+
+        <!-- כפתור שליחה -->
+        <button id="submitButton" disabled>שלח הזמנה</button>
+
+        <!-- הודעת אישור -->
+        <div id="confirmationMessage" style="display:none;">
+            <p id="messageText"></p>
+        </div>
+    </div>
+</body>
+</html>
